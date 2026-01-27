@@ -694,52 +694,63 @@
 
 						</div>
 						<div class="contacts__column-forms">
-							<form action="https://formspree.io/f/xdagyrrv" method="POST" class="form">
+<form action="https://formspree.io/f/xdagyrrv" method="POST" class="form">
   <div class="form__row">
     <div class="form__line">
-      <label class="form__label">Полное имя</label>
+      <label for="ru-name" class="form__label"></label>
       <input
-        type="text"
+        id="ru-name"
+        autocomplete="off"
         name="name"
+        data-value="Полное имя"
+        data-error="Заполните поле"
+        type="text"
         class="form__input input _req"
-        required
       />
     </div>
 
     <div class="form__line">
-      <label class="form__label">Телефон</label>
+      <label for="ru-phone" class="form__label"></label>
       <input
-        type="text"
+        id="ru-phone"
+        autocomplete="off"
         name="phone"
+        data-value="Телефон"
+        data-error="Заполните поле"
+        type="text"
         class="form__input input _phone _req"
-        required
       />
     </div>
   </div>
 
   <div class="form__line">
-    <label class="form__label">Email</label>
+    <label for="ru-email" class="form__label"></label>
     <input
-      type="email"
+      id="ru-email"
+      autocomplete="off"
       name="email"
+      data-value="Email"
+      data-error="Заполните поле"
+      type="email"
       class="form__input input _req"
-      required
     />
   </div>
 
   <div class="form__line">
-    <label class="form__label">Ваше сообщение</label>
+    <label for="ru-message" class="form__label"></label>
     <textarea
+      id="ru-message"
       name="message"
       rows="10"
+      data-value="Ваше сообщение"
+      data-error="Заполните поле"
       class="form__textarea input _req"
-      required
     ></textarea>
     <div class="form__value"><span>0</span>/500</div>
   </div>
 
-  <!-- скрытое поле, чтобы различать формы -->
-  <input type="hidden" name="form_type" value="Сообщение с сайта">
+  <!-- чтобы на почте было понятно, что это RU форма -->
+  <input type="hidden" name="form_type" value="Сообщение с сайта (RU)">
 
   <div class="form__line-btn">
     <button type="submit" class="form__button btn">
@@ -849,47 +860,72 @@
         </div>
       </div>
       <form action="https://formspree.io/f/xdagyrrv" method="POST" class="form">
-        <div class="form__row">
-          <div class="form__line">
-            <label for="input" class="form__label">Ваше имя*</label>
-            <input
-              id="input"
-              name="name"
-              data-value=""
-              data-error="Заполните поле"
-              type="text"
-              class="form__input input _req"
-            />
-          </div>
-          <div class="form__line">
-            <label for="phon" class="form__label">Ваш телефон*</label>
-            <input
-              id="phon"
-              name="phone"
-              data-value=""
-              data-error="Заполните поле"
-              type="text"
-              class="form__input input _req"
-            />
-          </div>
-        </div>
-        <div class="form__line">
-          <label for="text" class="form__label">Ваше сообщение*</label>
-          <textarea
-            id="text"
-            name="message"
-            rows="10"
-            data-value=""
-            data-error="Заполните поле"
-            class="form__textarea input _req"
-          ></textarea>
-          <div class="form__value"><span>0</span>/500</div>
-        </div>
-        <div class="form__line">
-          <button type="submit" class="form__button btn">Заказать звонок</button>
-        </div>
-      </form>
+  <div class="form__row">
+    <div class="form__line">
+      <label for="ru-name2" class="form__label"></label>
+      <input
+        id="ru-name2"
+        autocomplete="off"
+        name="name"
+        data-value="Ваше имя*"
+        data-error="Заполните поле"
+        type="text"
+        class="form__input input _req"
+      />
     </div>
+
+    <div class="form__line">
+      <label for="ru-phone2" class="form__label"></label>
+      <input
+        id="ru-phone2"
+        autocomplete="off"
+        name="phone"
+        data-value="Ваш телефон*"
+        data-error="Заполните поле"
+        type="text"
+        class="form__input input _req"
+      />
+    </div>
+  </div>
+
+  <div class="form__line">
+    <label for="ru-message2" class="form__label"></label>
+    <textarea
+      id="ru-message2"
+      name="message"
+      rows="6"
+      data-value="Ваше сообщение"
+      class="form__textarea input"
+    ></textarea>
+    <div class="form__value"><span>0</span>/500</div>
+  </div>
+
+  <!-- пометка для почты -->
+  <input type="hidden" name="form_type" value="Заказать звонок (RU)">
+
+  <div class="form__line">
+    <button type="submit" class="form__button btn">
+      Заказать звонок
+    </button>
+  </div>
+</form>
+
+    </div>
+	</div>
+</div>
+<div class="popup popup_massagename-message">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close popup__close_video"></div>
+			<div class="popup__video _video"></div>
+		</div>
 	</div>
 </div>
 	<!-- Swiper -->
