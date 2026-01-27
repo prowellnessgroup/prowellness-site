@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="et">
  <head>
 	<title>Hey, Wellness</title>
 	<meta charset="UTF-8">
@@ -167,50 +167,78 @@
 			<section class="page__contacts contacts">
 				<div class="contacts__container _container">
 					<div class="team__top top-team">
-						<div class="top-team__title title">KONTAKTID</div>
+						<div class="top-team__name name">ProWellness Group</div>
+						<div class="top-team__title title">Ära kõhkle, küsi mis tahes küsimus</div>
 					</div>
 					<div class="contacts__columns">
 						<div class="contacts__column-block block-contacts">
 							<div class="block-contacts__top">
 								<div class="block-contacts__name name">võtke meiega ühendust</div>
-								<div class="block-contacts__title _title">Ära kõhkle, küsi mis tahes küsimus</div>
+								<div class="block-contacts__title _title">KONTAKTID</div>
 							</div>
 							<div class="block-contacts__data">
-								<div class="block-contacts__adres"><span>123 Main Street, 310 USA 12345</span></div>
-								<a href="tel:+0119022582658" class="block-contacts__tel"><span>+3725-393-30-11</span></a>
+								<div class="block-contacts__adres"><span>Majaka tänav 12, 11214, Tallinn, Eesti</span></div>
+								<a href="tel:+0119022582658" class="block-contacts__tel"><span>+37253933011</span> WhatsApp/Telegram/Viber</a>
 								<a href="mailto:Examp@creativeagn.com"
 									class="block-contacts__email"><span>prowellgr@gmail.com</span></a>
 							</div>
 
 						</div>
 						<div class="contacts__column-forms">
-							<form action="#" enctype="multipart/form-data" class="form">
-								<div class="form__row">
-									<div class="form__line">
-										<label for="input" class="form__label">Täisnimi</label>
-										<input id="input" autocomplete="off" name="form[]" data-value="" data-error="Täitke väli"
-											type="name" class="form__input input _req">
-									</div>
-									<div class="form__line">
-										<label for="phon" class="form__label">Telefon</label>
-										<input id="phon" autocomplete="off" name="form[]" data-value="" data-error="Täitke väli"
-											type="text" class="form__input input _phone _req">
-									</div>
-								</div>
-								<div class="form__line">
-									<label for="mail" class="form__label">Email</label>
-									<input id="mail" autocomplete="off" name="form[]" data-value="" data-error="Täitke väli"
-										type="email" class="form__input input _req">
-								</div>
-								<div class="form__line">
-									<label for="text" class="form__label">Teie sõnum</label>
-									<textarea id="text" rows="10" data-value="" class="form__textarea input _req"></textarea>
-									<div class="form__value"><span>0</span>/500</div>
-								</div>
-								<div class="form__line-btn">
-									<button type="submit" class="form__button btn">KUTSUGE KÕNE</button>
-								</div>
-							</form>
+							<form action="https://formspree.io/f/xdagyrrv" method="POST" class="form">
+  <div class="form__row">
+    <div class="form__line">
+      <label class="form__label">Teie nimi</label>
+      <input
+        type="text"
+        name="name"
+        class="form__input input _req"
+        required
+      />
+    </div>
+
+    <div class="form__line">
+      <label class="form__label">Teie telefon</label>
+      <input
+        type="text"
+        name="phone"
+        class="form__input input _phone _req"
+        required
+      />
+    </div>
+  </div>
+
+  <div class="form__line">
+    <label class="form__label">E-post</label>
+    <input
+      type="email"
+      name="email"
+      class="form__input input _req"
+      required
+    />
+  </div>
+
+  <div class="form__line">
+    <label class="form__label">Teie sõnum</label>
+    <textarea
+      name="message"
+      rows="10"
+      class="form__textarea input _req"
+      required
+    ></textarea>
+    <div class="form__value"><span>0</span>/500</div>
+  </div>
+
+  <!-- скрытое поле для понимания типа формы -->
+  <input type="hidden" name="form_type" value="Sõnum veebisaidilt">
+
+  <div class="form__line-btn">
+    <button type="submit" class="form__button btn">
+      Saada sõnum
+    </button>
+  </div>
+</form>
+
 						</div>
 					</div>
 				</div>
@@ -285,76 +313,6 @@
 	</div>
 </footer>
 	</div>
-	<div class="popup popup_popup">
-	<div class="popup__content">
-		<div class="popup__body">
-      <div class="quiz-0__heder">
-        <div class="quiz-0__logo">
-          
-            <img src="img/logo.jpg" alt="logo" />
-          
-        </div>
-      </div>
-      <form action="send.php" method="POST" class="form">
-        <div class="form__row">
-          <div class="form__line">
-            <label for="input" class="form__label">Teie nimi*</label>
-            <input
-              id="input"
-              name="name"
-              data-value=""
-              data-error="Täitke väli"
-              type="text"
-              class="form__input input _req"
-            />
-          </div>
-          <div class="form__line">
-            <label for="phon" class="form__label">Teie telefon*</label>
-            <input
-              id="phon"
-              name="phone"
-              data-value=""
-              data-error="Täitke väli"
-              type="text"
-              class="form__input input _req"
-            />
-          </div>
-        </div>
-        <div class="form__line">
-          <label for="text" class="form__label">Teie sõnum*</label>
-          <textarea
-            id="text"
-            name="message"
-            rows="10"
-            data-value=""
-            data-error="Täitke väli"
-            class="form__textarea input _req"
-          ></textarea>
-          <div class="form__value"><span>0</span>/500</div>
-        </div>
-        <div class="form__line">
-          <button type="submit" class="form__button btn">Saada sõnum</button>
-        </div>
-      </form>
-    </div>
-	</div>
-</div>
-<div class="popup popup_massagename-message">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close"></div>
-		</div>
-	</div>
-</div>
-<div class="popup popup_video">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close popup__close_video"></div>
-			<div class="popup__video _video"></div>
-		</div>
-	</div>
-</div>
-
 	<!-- Swiper -->
 <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 <script src="js/vendors.min.js"></script>

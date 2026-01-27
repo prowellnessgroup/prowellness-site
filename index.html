@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="et">
  <head>
 	<title>Hey, Wellness</title>
 	<meta charset="UTF-8">
@@ -670,33 +670,60 @@ vastavalt Eesti Vabariigi õigusaktidele ja Sotsiaalkindlustusameti otsustele.
 
 						</div>
 						<div class="contacts__column-forms">
-							<form action="#" enctype="multipart/form-data" class="form">
-								<div class="form__row">
-									<div class="form__line">
-										<label for="input" class="form__label">Teie nimi</label>
-										<input id="input" autocomplete="off" name="form[]" data-value="" data-error="Täitke väli"
-											type="name" class="form__input input _req">
-									</div>
-									<div class="form__line">
-										<label for="phon" class="form__label">Teie telefon</label>
-										<input id="phon" autocomplete="off" name="form[]" data-value="" data-error="Täitke väli"
-											type="text" class="form__input input _phone _req">
-									</div>
-								</div>
-								<div class="form__line">
-									<label for="mail" class="form__label">Email</label>
-									<input id="mail" autocomplete="off" name="form[]" data-value="" data-error="Täitke väli"
-										type="email" class="form__input input _req">
-								</div>
-								<div class="form__line">
-									<label for="text" class="form__label">Teie sõnum</label>
-									<textarea id="text" rows="10" data-value="" class="form__textarea input _req"></textarea>
-									<div class="form__value"><span>0</span>/500</div>
-								</div>
-								<div class="form__line-btn">
-									<button type="submit" class="form__button btn">Saada sõnum</button>
-								</div>
-							</form>
+							<form action="https://formspree.io/f/xdagyrrv" method="POST" class="form">
+  <div class="form__row">
+    <div class="form__line">
+      <label class="form__label">Teie nimi</label>
+      <input
+        type="text"
+        name="name"
+        class="form__input input _req"
+        required
+      />
+    </div>
+
+    <div class="form__line">
+      <label class="form__label">Teie telefon</label>
+      <input
+        type="text"
+        name="phone"
+        class="form__input input _phone _req"
+        required
+      />
+    </div>
+  </div>
+
+  <div class="form__line">
+    <label class="form__label">E-post</label>
+    <input
+      type="email"
+      name="email"
+      class="form__input input _req"
+      required
+    />
+  </div>
+
+  <div class="form__line">
+    <label class="form__label">Teie sõnum</label>
+    <textarea
+      name="message"
+      rows="10"
+      class="form__textarea input _req"
+      required
+    ></textarea>
+    <div class="form__value"><span>0</span>/500</div>
+  </div>
+
+  <!-- скрытое поле для понимания типа формы -->
+  <input type="hidden" name="form_type" value="Sõnum veebisaidilt">
+
+  <div class="form__line-btn">
+    <button type="submit" class="form__button btn">
+      Saada sõnum
+    </button>
+  </div>
+</form>
+
 						</div>
 					</div>
 				</div>
@@ -798,47 +825,49 @@ vastavalt Eesti Vabariigi õigusaktidele ja Sotsiaalkindlustusameti otsustele.
           
         </div>
       </div>
-      <form action="send.php" method="POST" class="form">
-        <div class="form__row">
-          <div class="form__line">
-            <label for="input" class="form__label">Teie nimi*</label>
-            <input
-              id="input"
-              name="name"
-              data-value=""
-              data-error="Täitke väli"
-              type="text"
-              class="form__input input _req"
-            />
-          </div>
-          <div class="form__line">
-            <label for="phon" class="form__label">Teie telefon*</label>
-            <input
-              id="phon"
-              name="phone"
-              data-value=""
-              data-error="Täitke väli"
-              type="text"
-              class="form__input input _req"
-            />
-          </div>
-        </div>
-        <div class="form__line">
-          <label for="text" class="form__label">Teie sõnum*</label>
-          <textarea
-            id="text"
-            name="message"
-            rows="10"
-            data-value=""
-            data-error="Täitke väli"
-            class="form__textarea input _req"
-          ></textarea>
-          <div class="form__value"><span>0</span>/500</div>
-        </div>
-        <div class="form__line">
-          <button type="submit" class="form__button btn">Saada sõnum</button>
-        </div>
-      </form>
+      <form action="https://formspree.io/f/xdagyrrv" method="POST" class="form">
+  <div class="form__row">
+    <div class="form__line">
+      <label class="form__label">Teie nimi*</label>
+      <input
+        type="text"
+        name="name"
+        class="form__input input _req"
+        required
+      />
+    </div>
+
+    <div class="form__line">
+      <label class="form__label">Teie telefon*</label>
+      <input
+        type="text"
+        name="phone"
+        class="form__input input _req"
+        required
+      />
+    </div>
+  </div>
+
+  <div class="form__line">
+    <label class="form__label">Kommentaar</label>
+    <textarea
+      name="message"
+      rows="6"
+      class="form__textarea input"
+    ></textarea>
+    <div class="form__value"><span>0</span>/500</div>
+  </div>
+
+  <!-- скрытое поле -->
+  <input type="hidden" name="form_type" value="Tagasihelistamise taotlus">
+
+  <div class="form__line">
+    <button type="submit" class="form__button btn">
+      Helista mulle tagasi
+    </button>
+  </div>
+</form>
+
     </div>
 	</div>
 </div>
