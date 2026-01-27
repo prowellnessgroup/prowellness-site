@@ -145,33 +145,60 @@
 
 						</div>
 						<div class="contacts__column-forms">
-							<form action="https://formspree.io/f/xdagyrrv" enctype="multipart/form-data" class="form">
-								<div class="form__row">
-									<div class="form__line">
-										<label for="input" class="form__label">Полное имя</label>
-										<input id="input" autocomplete="off" name="form[]" data-value="" data-error="Заполните поле"
-											type="name" class="form__input input _req">
-									</div>
-									<div class="form__line">
-										<label for="phon" class="form__label">Телефон</label>
-										<input id="phon" autocomplete="off" name="form[]" data-value="" data-error="Заполните поле"
-											type="text" class="form__input input _phone _req">
-									</div>
-								</div>
-								<div class="form__line">
-									<label for="mail" class="form__label">Email</label>
-									<input id="mail" autocomplete="off" name="form[]" data-value="" data-error="Заполните поле"
-										type="email" class="form__input input _req">
-								</div>
-								<div class="form__line">
-									<label for="text" class="form__label">Ваше сообщение</label>
-									<textarea id="text" rows="10" data-value="" class="form__textarea input _req"></textarea>
-									<div class="form__value"><span>0</span>/500</div>
-								</div>
-								<div class="form__line-btn">
-									<button type="submit" class="form__button btn">Отправить сообщение</button>
-								</div>
-							</form>
+							<form action="https://formspree.io/f/xdagyrrv" method="POST" class="form">
+  <div class="form__row">
+    <div class="form__line">
+      <label class="form__label">Полное имя</label>
+      <input
+        type="text"
+        name="name"
+        class="form__input input _req"
+        required
+      />
+    </div>
+
+    <div class="form__line">
+      <label class="form__label">Телефон</label>
+      <input
+        type="text"
+        name="phone"
+        class="form__input input _phone _req"
+        required
+      />
+    </div>
+  </div>
+
+  <div class="form__line">
+    <label class="form__label">Email</label>
+    <input
+      type="email"
+      name="email"
+      class="form__input input _req"
+      required
+    />
+  </div>
+
+  <div class="form__line">
+    <label class="form__label">Ваше сообщение</label>
+    <textarea
+      name="message"
+      rows="10"
+      class="form__textarea input _req"
+      required
+    ></textarea>
+    <div class="form__value"><span>0</span>/500</div>
+  </div>
+
+  <!-- скрытое поле, чтобы различать формы -->
+  <input type="hidden" name="form_type" value="Сообщение с сайта">
+
+  <div class="form__line-btn">
+    <button type="submit" class="form__button btn">
+      Отправить сообщение
+    </button>
+  </div>
+</form>
+
 						</div>
 					</div>
 				</div>
