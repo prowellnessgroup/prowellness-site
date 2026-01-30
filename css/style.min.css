@@ -573,9 +573,12 @@ textarea.input {
   color: #112e41;
   line-height: 119.0476190476%;
 }
-.title1{font-family: "Roboto";}
 .title_about {
   text-align: center;
+}
+
+.title1 {
+  font-family: "Roboto";
 }
 
 ._title {
@@ -2543,7 +2546,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .our__link {
   font-size: 15px;
   color: #999999;
-  line-height: 213.3333333333%;
+  line-height: 1.1;
+  margin: 0px 0px 5px 0px;
 }
 
 .instagram__title {
@@ -2608,6 +2612,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   padding: 0px 0px 0px 25px;
   margin: 0px 0px 10px 0px;
 }
+.contact__link_tel {
+  margin: 0px 0px 10px 0px;
+}
 .contact__link_tel span {
   background: url("../img/footer/icon-02.png") 0 0 no-repeat;
   display: inline-block;
@@ -2617,6 +2624,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background: url("../img/footer/icon-03.png") 0 5px no-repeat;
   display: inline-block;
   padding: 0px 0px 0px 25px;
+  margin: 0px 0px 0px 18px;
 }
 
 .botton {
@@ -2633,6 +2641,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .botton__text span {
   color: #ff7214;
+}
+
+.contact__link_text::before,
+.contact__link_tel::before {
+  content: none;
 }
 
 .parallax {
