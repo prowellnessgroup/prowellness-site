@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.prowellnessgroup.ee/sitemap.xml
+Sitemap: https://www.prowellnessgroup.ee/sitemapimages.xml
